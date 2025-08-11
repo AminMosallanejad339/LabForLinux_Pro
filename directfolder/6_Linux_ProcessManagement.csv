@@ -1,0 +1,21 @@
+question,answer,explanation
+How to display all running processes?,ps aux,Lists all running processes with detailed info.
+How to display processes for the current user?,ps -u username,Shows processes owned by the specified user.
+How to display processes in a tree format?,pstree,Displays processes in a hierarchical tree view.
+How to kill a process by PID?,kill PID,Sends the default TERM signal to terminate the process.
+How to force kill a process?,kill -9 PID,Sends SIGKILL to forcibly stop the process.
+How to find process by name?,pgrep process_name,Returns PIDs of processes matching the name.
+How to monitor processes in real-time?,top,Interactive command showing real-time process info.
+How to use an improved version of top?,htop,Enhanced, user-friendly interactive process viewer.
+How to start a process in the background?,command &,Runs the command in background.
+How to bring a background job to the foreground?,fg,Brings the most recent background job to foreground.
+How to stop a running process temporarily?,Ctrl + Z,Sends SIGSTOP to pause the current foreground process.
+How to resume a stopped process?,bg,Resumes a stopped job in the background.
+How to see open files by a process?,lsof -p PID,Lists all files opened by the process.
+How to display CPU and memory usage per process?,top or ps aux,Shows resource usage by each process.
+How to change process priority?,nice -n 10 command,Starts a command with a nice value (lower priority).
+How to change priority of a running process?,renice -n 5 -p PID,Changes nice value of an existing process.
+How to check zombie processes?,ps aux | grep 'Z',Lists zombie (defunct) processes.
+How to see process environment variables?,cat /proc/PID/environ,Displays environment variables for the process.
+How to trace system calls of a process?,strace -p PID,Attaches to a process and shows system calls it makes.
+How to get process tree including children?,pstree -p PID,Shows process tree starting at given PID.

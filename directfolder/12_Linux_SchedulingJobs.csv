@@ -1,0 +1,21 @@
+question,answer,explanation
+How to view current cron jobs?,crontab -l,Lists all cron jobs for the current user.
+How to edit cron jobs?,crontab -e,Opens the cron table for editing.
+How to remove all cron jobs?,crontab -r,Removes all cron jobs for the current user.
+How to schedule a job to run every day at 2 AM?,0 2 * * * command,Crontab syntax to run command daily at 2 AM.
+How to schedule a job every 5 minutes?,*/5 * * * * command,Runs command every 5 minutes.
+How to run a command once at a specific time?,at HH:MM,Schedules a one-time job at specified time.
+How to list scheduled at jobs?,atq,Displays queued at jobs.
+How to remove a scheduled at job?,atrm job_number,Removes an at job by its job number.
+How to check systemd timers?,systemctl list-timers,Lists all active systemd timers.
+How to start a systemd timer?,systemctl start timer_name.timer,Starts a specific systemd timer.
+How to enable a systemd timer on boot?,systemctl enable timer_name.timer,Enables timer to start at boot.
+How to view logs of cron jobs?,journalctl -u cron,Displays cron job logs from systemd journal.
+How to redirect cron job output to a file?,command > /path/to/logfile 2>&1,Saves both stdout and stderr of cron job to file.
+How to run a cron job as another user?,sudo crontab -u username -e,Edit cron jobs for a specific user.
+How to check if cron daemon is running?,systemctl status cron,Shows the status of cron service.
+How to schedule a job every Monday at 5 PM?,0 17 * * 1 command,Cron syntax for weekly Monday 5 PM job.
+How to run a job every hour on the hour?,0 * * * * command,Cron syntax for hourly job.
+How to use environment variables in cron?,Define VAR=value before command,Sets environment variables for cron jobs.
+How to run multiple commands in cron?,command1; command2,Chain commands with semicolon in cron.
+How to prevent cron email notifications?,command > /dev/null 2>&1,Discards output to avoid emails.

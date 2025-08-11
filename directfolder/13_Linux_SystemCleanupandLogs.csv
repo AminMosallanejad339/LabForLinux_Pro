@@ -1,0 +1,21 @@
+question,answer,explanation
+How to check disk usage of current directory?,du -sh .,Shows total disk usage of current directory in human-readable format.
+How to check free disk space?,df -h,Displays available and used disk space on all mounted filesystems.
+How to remove unused packages (Debian/Ubuntu)?,sudo apt autoremove,Removes packages that were automatically installed and are no longer needed.
+How to clear systemd journal logs?,sudo journalctl --vacuum-time=7d,Deletes journal logs older than 7 days.
+How to view the last 100 lines of a log file?,tail -n 100 /var/log/syslog,Shows last 100 lines of syslog.
+How to follow a log file live?,tail -f /var/log/syslog,Continuously displays new log entries in real-time.
+How to clear the terminal screen?,clear,Clears the terminal window.
+How to remove files older than 30 days?,find /path -type f -mtime +30 -delete,Deletes files in /path older than 30 days.
+How to empty a file without deleting it?,> filename,Truncates the file to zero length without deleting.
+How to check system uptime?,uptime,Shows how long the system has been running.
+How to view running processes using most CPU?,top or htop,Displays real-time processes sorted by CPU usage.
+How to check current memory usage?,free -h,Shows used and free memory in human-readable format.
+How to clear page cache?,sudo sync; echo 1 | sudo tee /proc/sys/vm/drop_caches,Clears filesystem page cache.
+How to clear dentries and inodes cache?,sudo sync; echo 2 | sudo tee /proc/sys/vm/drop_caches,Clears dentries and inode caches.
+How to clear pagecache, dentries, and inodes?,sudo sync; echo 3 | sudo tee /proc/sys/vm/drop_caches,Clears all filesystem caches.
+How to rotate log files manually?,sudo logrotate -f /etc/logrotate.conf,Forces log rotation as per configuration.
+How to check disk inode usage?,df -i,Displays inode usage on all filesystems.
+How to find large files?,find / -type f -size +100M,Searches for files larger than 100MB.
+How to empty the trash?,rm -rf ~/.local/share/Trash/*,Deletes all files in the trash directory.
+How to view system logs?,journalctl,Displays system logs collected by systemd journal.

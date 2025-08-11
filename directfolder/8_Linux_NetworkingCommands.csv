@@ -1,0 +1,21 @@
+question,answer,explanation
+How to display network interfaces?,ip addr,Shows all network interfaces and their details.
+How to display routing table?,ip route,Shows current routing table.
+How to check active connections?,netstat -tuln,Lists all listening TCP/UDP ports.
+How to display network interface statistics?,ifconfig,Displays detailed info about network interfaces.
+How to ping a host?,ping hostname_or_ip,Tests connectivity to a remote host.
+How to trace the route to a host?,traceroute hostname_or_ip,Shows the path packets take to a host.
+How to display open ports?,ss -tuln,Lists open TCP/UDP ports and sockets.
+How to check DNS resolution?,nslookup domain_name,Queries DNS to get IP for domain.
+How to display network bandwidth usage?,iftop,Real-time bandwidth usage monitor.
+How to show ARP cache?,arp -a,Displays the Address Resolution Protocol cache.
+How to configure a static IP temporarily?,sudo ip addr add IP/Mask dev interface,Assigns IP address temporarily until reboot.
+How to bring an interface up?,sudo ip link set interface up,Enables the specified network interface.
+How to bring an interface down?,sudo ip link set interface down,Disables the specified network interface.
+How to display wireless networks?,iwlist scan,Lists available Wi-Fi networks.
+How to connect to a Wi-Fi network?,nmcli device wifi connect SSID password PASSWORD,Connects to Wi-Fi via command line.
+How to restart network service?,sudo systemctl restart networking,Restarts network services.
+How to view active network connections?,ss -s,Summarizes active network connections.
+How to monitor packets on an interface?,tcpdump -i interface,Captures and displays network packets.
+How to add a default gateway?,sudo ip route add default via gateway_ip,Sets default route for network traffic.
+How to flush DNS cache?,sudo systemd-resolve --flush-caches,Clears DNS cache in systemd-resolved.

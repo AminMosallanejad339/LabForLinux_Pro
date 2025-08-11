@@ -1,0 +1,21 @@
+question,answer,explanation
+How to list files in the current directory?,ls,Lists files and directories in the current directory.
+How to list all files including hidden ones?,ls -a,"The -a option shows all files, including hidden (starting with .)."
+How to list files in long format?,ls -l,"Displays detailed information including permissions, size, and timestamps."
+How to list files with human-readable sizes?,ls -lh,"The -h flag makes file sizes easier to read (e.g., KB, MB)."
+How to change to a directory named 'Documents'?,cd Documents,cd followed by directory name changes the current working directory.
+How to go up one directory level?,cd ..,cd .. moves to the parent directory.
+How to go to the home directory?,cd ~,cd ~ moves to the user's home directory.
+How to show the current directory path?,pwd,Print Working Directory displays the full path of the current directory.
+How to create a directory named 'test'?,mkdir test,Creates a new directory named 'test'.
+How to create nested directories 'a/b/c'?,mkdir -p a/b/c,The -p option creates parent directories as needed.
+How to remove an empty directory named 'test'?,rmdir test,Removes a directory only if it is empty.
+How to remove a directory and all its contents?,rm -r test,The -r option recursively deletes a directory and its contents.
+How to create an empty file named 'file.txt'?,touch file.txt,"Creates an empty file if it does not exist, or updates timestamp."
+How to copy 'file1.txt' to 'file2.txt'?,cp file1.txt file2.txt,Copies file1.txt to a new file named file2.txt.
+How to copy a folder and its contents?,cp -r folder1 folder2,The -r flag copies the folder recursively.
+How to move or rename a file?,mv oldname.txt newname.txt,Renames or moves a file to a new name or location.
+How to delete a file named 'file.txt'?,rm file.txt,Deletes the specified file.
+How to view directory structure as a tree?,tree,Displays directories and files in a tree-like format.
+How to get detailed info about a file?,stat file.txt,"Shows size, permissions, and timestamps for the file."
+How to find a file named 'myfile.txt' in current directory and subdirectories?,find . -name myfile.txt,Searches recursively from current directory for a file by name.

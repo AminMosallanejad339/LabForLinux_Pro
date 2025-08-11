@@ -1,0 +1,21 @@
+question,answer,explanation
+How to check the version of gcc installed?,gcc --version,Displays the installed GCC compiler version.
+How to compile a C program named program.c?,gcc program.c -o program,Compiles program.c to executable named program.
+How to install make on Debian/Ubuntu?,sudo apt install make,Installs the make build automation tool.
+How to run a Makefile?,make,Executes the default target in the Makefile.
+How to clean build files using make?,make clean,Removes files generated during build.
+How to check installed cmake version?,cmake --version,Shows the installed version of CMake.
+How to create a build directory and run cmake?,mkdir build && cd build && cmake ..,Creates a build directory and generates build files.
+How to build a project with cmake?,cmake --build .,Compiles the project in the current build directory.
+How to install build-essential package?,sudo apt install build-essential,Installs compiler and build tools on Debian/Ubuntu.
+How to check installed autoconf version?,autoconf --version,Displays the installed version of Autoconf.
+How to generate configure script?,autoreconf -i,Generates configuration scripts for building.
+How to run configure script?,./configure,Prepares the build environment based on system.
+How to build project with make after configure?,make,Builds the project using the Makefile.
+How to install compiled program?,sudo make install,Installs the built program system-wide.
+How to uninstall compiled program?,sudo make uninstall,Removes installed files if supported by Makefile.
+How to update pkg-config paths?,export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig,Sets environment variable for pkg-config.
+How to check linker version?,ld --version,Shows the version of the linker.
+How to check debugger version?,gdb --version,Displays the installed version of GDB debugger.
+How to debug program with gdb?,gdb ./program,Starts gdb for debugging program.
+How to build with debug symbols?,gcc -g program.c -o program,Compiles program with debug information.

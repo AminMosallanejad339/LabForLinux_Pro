@@ -1,0 +1,21 @@
+question,answer,explanation
+How to display the content of a file?,cat filename.txt,Prints the contents of the file to the terminal.
+How to view the content of a file one page at a time?,less filename.txt,Opens the file with paging support (scroll up/down).
+How to view file content using more?,more filename.txt,Displays file content page-by-page in a terminal.
+How to display the first 10 lines of a file?,head filename.txt,Shows the first 10 lines of the file by default.
+How to display the last 10 lines of a file?,tail filename.txt,Displays the last 10 lines of the file by default.
+How to monitor a file for real-time updates?,tail -f filename.txt,Follows the file and outputs new lines as they are added.
+How to number all output lines of a file?,nl filename.txt,Prints file content with line numbers.
+"How to count lines, words, and characters in a file?",wc filename.txt,"Displays line, word, and byte counts of the file."
+How to extract the first column from a file?,"cut -d',' -f1 filename.csv",Cuts and prints the first field (column) using comma as delimiter.
+How to sort lines in a file alphabetically?,sort filename.txt,Sorts lines of the file in ascending order.
+How to remove duplicate lines from a sorted file?,uniq filename.txt,Filters out adjacent matching lines.
+How to compare two files line by line?,diff file1.txt file2.txt,Outputs the differences between two text files.
+How to compare two files byte by byte?,cmp file1.txt file2.txt,Finds the first difference between two files at byte level.
+How to display a file as hexadecimal output?,xxd filename.txt,Converts file content into a hex dump.
+How to concatenate multiple files?,cat file1.txt file2.txt > merged.txt,Joins file contents into a single file.
+How to display only lines matching a pattern?,grep 'pattern' filename.txt,Prints lines that match a given string or pattern.
+How to display lines NOT matching a pattern?,grep -v 'pattern' filename.txt,Shows lines that do not match the pattern.
+How to sort lines in reverse order?,sort -r filename.txt,Sorts the lines in descending order.
+How to count only the number of lines in a file?,wc -l filename.txt,Outputs the number of lines in the file.
+How to extract the last 20 lines of a file?,tail -n 20 filename.txt,Displays the last 20 lines from the file.

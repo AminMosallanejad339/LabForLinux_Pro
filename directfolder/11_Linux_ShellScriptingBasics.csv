@@ -1,0 +1,21 @@
+question,answer,explanation
+How to make a shell script executable?,chmod +x script.sh,Makes the script file executable.
+How to run a shell script?,./script.sh,Runs the script in the current directory.
+How to print text to the terminal?,echo "Hello, World!",Prints text or variables to the terminal.
+How to define a variable?,VAR_NAME="value",Assigns a value to a variable.
+How to get the value of a variable?,echo $VAR_NAME,Displays the value stored in a variable.
+How to write a comment?,# This is a comment,Lines starting with # are comments.
+How to read user input?,read variable,Reads input from user and stores in variable.
+How to use if statement?,if [ condition ]; then ... fi,Conditional execution of commands.
+How to use for loop?,for i in list; do ... done,Repeats commands for each item in list.
+How to use while loop?,while [ condition ]; do ... done,Repeats commands while condition is true.
+How to define a function?,function_name() { commands; },Defines a reusable block of commands.
+How to pass arguments to script?,./script.sh arg1 arg2,Access with $1, $2 inside script.
+How to check script arguments count?,if [ $# -eq 2 ]; then ...,Checks number of arguments passed.
+How to exit script with status?,exit 0,Ends script with exit status 0 (success).
+How to handle errors?,set -e,Stops script execution on error.
+How to get current script directory?,DIR="$(dirname "$0")",Gets directory where script is located.
+How to append output to a file?,echo "text" >> file.txt,Adds text to end of file.
+How to redirect stderr?,command 2> error.log,Redirects error messages to a file.
+How to run script in background?,./script.sh &,Runs script asynchronously.
+How to source a script?,source script.sh,Executes script in current shell.

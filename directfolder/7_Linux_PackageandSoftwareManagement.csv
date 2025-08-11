@@ -1,0 +1,21 @@
+question,answer,explanation
+How to update package lists on Debian/Ubuntu?,sudo apt update,Updates the list of available packages.
+How to upgrade all installed packages?,sudo apt upgrade,Upgrades all installed packages to latest versions.
+How to install a package?,sudo apt install package_name,Installs the specified package.
+How to remove a package?,sudo apt remove package_name,Removes the specified package but keeps config files.
+How to completely remove a package?,sudo apt purge package_name,Removes package along with config files.
+How to search for a package?,apt search package_name,Searches for packages matching the name.
+How to show package info?,apt show package_name,Displays detailed info about a package.
+How to list installed packages?,dpkg -l,Lists all installed packages.
+How to check if a package is installed?,dpkg -s package_name,Shows package status.
+How to clean package cache?,sudo apt clean,Removes downloaded package files to free disk space.
+How to install software from a .deb file?,sudo dpkg -i file.deb,Installs a .deb package file.
+How to fix broken dependencies?,sudo apt --fix-broken install,Fixes broken dependencies.
+How to update packages on Red Hat/CentOS?,sudo yum update,Updates all packages on RHEL-based systems.
+How to install a package on Red Hat/CentOS?,sudo yum install package_name,Installs package on RHEL-based systems.
+How to remove a package on Red Hat/CentOS?,sudo yum remove package_name,Removes package on RHEL-based systems.
+How to list enabled repositories?,yum repolist,Lists active yum repositories.
+How to add a new repository?,sudo add-apt-repository ppa:name,Adds PPA repository on Ubuntu.
+How to check available package versions?,apt-cache policy package_name,Shows available versions of a package.
+How to upgrade to a specific package version?,sudo apt install package_name=version,Installs a specific version of a package.
+How to list all files installed by a package?,dpkg -L package_name,Lists files installed by a package.

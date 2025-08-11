@@ -1,0 +1,21 @@
+question,answer,explanation
+How to search for the word 'error' in a file named 'log.txt'?,grep 'error' log.txt,grep searches for the pattern 'error' in the file 'log.txt'.
+How to perform a case-insensitive search for 'error' in 'log.txt'?,grep -i 'error' log.txt,#NAME?
+How to search recursively for 'error' in all files in the current directory?,grep -r 'error' .,-r enables recursive search starting from the current directory.
+How to search for lines that do NOT contain 'error' in 'log.txt'?,grep -v 'error' log.txt,-v inverts the match to show lines that don't contain the pattern.
+How to count the number of lines that contain 'error' in 'log.txt'?,grep -c 'error' log.txt,-c returns the count of matching lines.
+How to show line numbers with matches for 'error' in 'log.txt'?,grep -n 'error' log.txt,#NAME?
+How to search for lines starting with 'start' in 'file.txt'?,grep '^start' file.txt,^ is used to match the beginning of a line in regular expressions.
+How to search for lines ending with 'end' in 'file.txt'?,grep 'end$' file.txt,$ matches the end of a line.
+How to search for a whole word 'error' only?,grep -w 'error' file.txt,#NAME?
+How to search for multiple patterns like 'error' or 'fail'?,grep -E 'error|fail' file.txt,-E enables extended regex; '|' is used for OR.
+How to use find to locate a file named 'data.txt'?,find . -name 'data.txt',find searches for files named 'data.txt' starting from the current directory.
+How to find all '.log' files under '/var/log'?,find /var/log -type f -name '*.log',-type f restricts the search to files; '*.log' matches log files.
+How to find all empty files in the current directory?,find . -type f -empty,#NAME?
+How to find files modified in the last 1 day?,find . -mtime -1,-mtime -1 finds files modified in the last 24 hours.
+How to find files larger than 10MB?,find . -size +10M,+10M filters files larger than 10MB.
+How to find and delete all '.tmp' files?,find . -name '*.tmp' -delete,#NAME?
+How to search compressed files using zgrep?,zgrep 'error' log.gz,zgrep is used for searching inside compressed .gz files.
+How to search for pattern in multiple files?,grep 'pattern' file1.txt file2.txt,You can list multiple files to search in them at once.
+How to highlight matches when using grep?,grep --color=auto 'error' log.txt,#NAME?
+How to use egrep for advanced regex?,egrep 'error|fail|warn' log.txt,egrep is equivalent to grep -E and supports extended regex.

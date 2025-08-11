@@ -1,0 +1,21 @@
+question,answer,explanation
+How to display disk usage of all mounted filesystems?,df -h,Shows disk space usage in human-readable format.
+How to display disk usage of a specific directory?,du -sh directory_name,Shows total size of specified directory.
+How to list all partitions?,lsblk,Lists all block devices and partitions.
+How to display detailed partition info?,fdisk -l,Shows partition table of all disks.
+How to create a new partition?,sudo fdisk /dev/sdX,Interactive tool to create partitions on device sdX.
+How to format a partition with ext4 filesystem?,sudo mkfs.ext4 /dev/sdX1,Formats partition as ext4 filesystem.
+How to mount a filesystem?,sudo mount /dev/sdX1 /mnt/point,Mounts a device to the directory.
+How to unmount a filesystem?,sudo umount /mnt/point,Unmounts the filesystem from the directory.
+How to check filesystem type?,df -T /mount/point,Shows filesystem type of mounted filesystem.
+How to check disk usage per directory recursively?,du -h --max-depth=1 directory_name,Shows disk usage of directories one level deep.
+How to display inode usage?,df -i,Shows inode usage for filesystems.
+How to repair a filesystem?,sudo fsck /dev/sdX1,Checks and repairs filesystem errors.
+How to find largest files in a directory?,du -a directory_name | sort -n -r | head -n 10,Lists top 10 largest files/directories.
+How to create a swap file?,sudo fallocate -l 2G /swapfile,Creates a swap file of 2GB.
+How to enable swap file?,sudo mkswap /swapfile && sudo swapon /swapfile,Formats and enables the swap file.
+How to disable swap file?,sudo swapoff /swapfile,Disables the swap file.
+How to permanently add swap file?,Add '/swapfile none swap sw 0 0' to /etc/fstab,Mounts swap file at boot.
+How to check disk SMART status?,sudo smartctl -a /dev/sdX,Shows disk health status via SMART.
+How to monitor disk I/O usage?,iostat -dx 1,Shows real-time disk I/O statistics.
+How to find filesystem mount points?,mount | column -t,Lists all currently mounted filesystems.

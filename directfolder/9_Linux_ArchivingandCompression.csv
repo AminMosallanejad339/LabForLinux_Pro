@@ -1,0 +1,21 @@
+question,answer,explanation
+How to create a tar archive?,tar -cvf archive.tar files,Creates a tar archive from specified files.
+How to extract a tar archive?,tar -xvf archive.tar,Extracts files from a tar archive.
+How to create a gzip compressed tar archive?,tar -czvf archive.tar.gz files,Creates a gzip compressed tar archive.
+How to extract a gzip compressed tar archive?,tar -xzvf archive.tar.gz,Extracts gzip compressed tar archive files.
+How to create a bzip2 compressed tar archive?,tar -cjvf archive.tar.bz2 files,Creates a bzip2 compressed tar archive.
+How to extract a bzip2 compressed tar archive?,tar -xjvf archive.tar.bz2,Extracts bzip2 compressed tar archive files.
+How to compress a file using gzip?,gzip filename,Compresses a file using gzip.
+How to decompress a gzip file?,gunzip filename.gz,Decompresses a gzip compressed file.
+How to compress a file using bzip2?,bzip2 filename,Compresses a file using bzip2.
+How to decompress a bzip2 file?,bunzip2 filename.bz2,Decompresses a bzip2 compressed file.
+How to list contents of a tar archive?,tar -tvf archive.tar,Lists files inside a tar archive.
+How to create a zip archive?,zip archive.zip files,Creates a zip archive of specified files.
+How to extract a zip archive?,unzip archive.zip,Extracts files from a zip archive.
+How to view compressed file info?,gzip -l filename.gz,Displays info about gzip compressed files.
+How to test integrity of a tar archive?,tar -tvf archive.tar,Lists archive contents to verify integrity.
+How to compress files using xz?,xz filename,Compresses a file using xz compression.
+How to decompress xz files?,unxz filename.xz,Decompresses an xz compressed file.
+How to create a tar.xz archive?,tar -cJvf archive.tar.xz files,Creates a tar archive compressed with xz.
+How to extract tar.xz archive?,tar -xJvf archive.tar.xz,Extracts tar.xz archive files.
+How to remove files after compression with gzip?,gzip -k filename,Compresses file but keeps original (use -k).
