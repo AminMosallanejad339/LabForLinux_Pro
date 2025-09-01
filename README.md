@@ -1,7 +1,7 @@
 # 🧠 Linux Practice Lab
 
-An interactive **SQL practice environment** built with [Streamlit](https://streamlit.io/).  
-This app loads CSV question sets, displays one question at a time, and lets you type and submit SQL queries to check against the correct answer.
+An interactive **Linux practice environment** built with [Streamlit](https://streamlit.io/).  
+This app loads CSV question sets, displays one question at a time, and lets you type and submit Linux queries to check against the correct answer.
 
 ---
 
@@ -42,25 +42,14 @@ pandas
 1. Create a folder named **`directfolder`** in the project root.
 2. Inside it, place your CSV files containing the questions.
 
-**CSV Format Example**:
 
-| question                                | answer                              | explanation                        |
-|-----------------------------------------|--------------------------------------|--------------------------------------|
-| Select all rows from the `users` table  | SELECT * FROM users;                 | Basic `SELECT` statement.           |
-| Count all rows in the `orders` table    | SELECT COUNT(*) FROM orders;         | Demonstrates aggregate `COUNT()`.   |
-
-> **Important:**  
-> - Columns **must** be exactly: `question`, `answer`, `explanation`  
-> - This version does **not** include hints.
-
----
 
 ## 📄 Sample CSV (save as `directfolder/sample.csv`)
 ```csv
 question,answer,explanation
-"Select all rows from the users table","SELECT * FROM users;","Basic SELECT statement"
-"Count all rows in the orders table","SELECT COUNT(*) FROM orders;","Using COUNT() aggregate function"
-"Get the first 10 rows from products","SELECT * FROM products LIMIT 10;","Demonstrates LIMIT clause"
+"How to display CPU and memory usage per process?","top or ps aux","Shows resource usage by each process."
+"How to see process environment variables?","cat /proc/PID/environ","Displays environment variables for the process."
+"How to get process tree including children?","pstree -p PID","Shows process tree starting at given PID."
 ```
 
 ---
@@ -76,7 +65,7 @@ streamlit run app.py
 
 ## 🎮 Usage
 1. Select a question set from the **left sidebar**.
-2. Read the question and type your SQL in the answer box.
+2. Read the question and type your Linux in the answer box.
 3. **Submit**:
    - Press `Ctrl+Enter`  
    - or click the **✅ Submit** button
@@ -94,7 +83,7 @@ Toggle dark mode using the switch in the main app.
 
 ## 📁 Project Structure
 ```
-linux-sql-lab/
+linux-Linux-lab/
 │
 ├── app.py                 # Main Streamlit app
 ├── requirements.txt       # Dependencies
